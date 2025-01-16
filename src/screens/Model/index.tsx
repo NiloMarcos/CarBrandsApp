@@ -48,6 +48,7 @@ export function Model() {
       <ListComponent
         data={data}
         showImages={false}
+        numColumns={1}
       />
     </List>
   );

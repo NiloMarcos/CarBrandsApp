@@ -13,7 +13,7 @@ import {
 } from "./styles";
 
 export function Header() {
-    const { logout } = useMyContext();
+  const { logout, userName } = useMyContext();
 
   return (
     <Container>
@@ -21,7 +21,7 @@ export function Header() {
         <Brand>
           <Image source={require("../../../assets/car.png")} style={{ width: 30, height: 30 }} />
 
-          <Interprise>Motors Evolution</Interprise>
+          <Interprise>{userName}</Interprise>
         </Brand>
 
         <ButtnoProfile onPress={() => logout()}>
